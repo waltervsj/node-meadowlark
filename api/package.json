@@ -1,0 +1,13 @@
+{
+  "name": "api",
+  "version": "0.0.1",
+  "description": "Meadowlark restful api",
+  "main": "./src/server.js",
+  "repository": "localhost",
+  "author": "Walter Vieira",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express3-handlebars": "^0.5.2"
+  }
+}
