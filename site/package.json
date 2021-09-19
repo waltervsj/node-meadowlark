@@ -1,0 +1,12 @@
+{
+  "name": "meadowlark",
+  "version": "0.0.1",
+  "description": "Travel site",
+  "main": "entry.js",
+  "repository": "localhost",
+  "author": "Walter Vieira",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
