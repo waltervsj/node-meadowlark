@@ -1,13 +1,6 @@
 const express = require('express');
+const { getFortune } = require('./lib/fortune');
 const app = express();
-
-const fortunes = [
-    "Conquer your fears or they will conquer you.",
-    "Rivers need springs.",
-    "Do not fear what you don't know.",
-    "You will have a pleasant surprise.",
-    "Whenever possible, keep it simple.",
-];
 
 // set up handlebars view engine
 var handlebars = require('express3-handlebars')
@@ -28,8 +21,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-    const selectedFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
-    res.render('about', { fortune: selectedFortune });
+    res.render('about', { fortune: getFortune() });
 });
 
 // custom 404
