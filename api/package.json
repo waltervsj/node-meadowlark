@@ -7,7 +7,12 @@
   "author": "Walter Vieira",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "express3-handlebars": "^0.5.2"
+    "express3-handlebars": "^0.5.2",
+    "formidable": "^1.2.2",
+    "morgan": "^1.10.0",
+    "morgan-body": "^2.6.6",
+    "nodemailer": "^6.6.3"
   }
 }
